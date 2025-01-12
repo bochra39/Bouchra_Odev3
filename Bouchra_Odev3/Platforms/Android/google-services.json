@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "921870436988",
+    "project_id": "bouchra-project",
+    "storage_bucket": "bouchra-project.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921870436988:android:1de835858e1221b48ed7f9",
+        "android_client_info": {
+          "package_name": "com.company.addname"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZqYPOyc-11HO2D8IjeC5aMbsIGyxVlKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

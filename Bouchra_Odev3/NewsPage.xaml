@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bouchra_Odev3.NewPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="share.png" Order="Primary" Clicked="OnShareClicked"/>
+        <ToolbarItem IconImageSource="refresh.png" Order="Primary" Clicked="OnRefreshClicked"/>
+    </ContentPage.ToolbarItems>
+
+    <RefreshView RefreshColor="Beige" Refreshing="LoadHaberler" x:Name="refreshView">
+        <Grid RowDefinitions="Auto,*">
+            <CollectionView x:Name="lstKategori" Grid.Row="0"
+                            SelectionChanged="lstKategori_SelectionChanged" SelectionMode="Single">
+
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal" ItemSpacing="10"/>
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label Text="{Binding Baslik}" FontSize="Medium" TextColor="#2C3E50" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <CollectionView x:Name="lstHaberler" Grid.Row="1" SelectionChanged="lstHaberler_SelectionChanged" SelectionMode="Single">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="10"/>
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Image Source="{Binding enclosure.link}" HeightRequest="200" Aspect="AspectFill"/>
+                            <Label Text="{Binding title}" FontSize="Large" TextColor="#2C3E50"/>
+                            <HorizontalStackLayout Margin="10">
+                                <Label Text="{Binding author}" TextColor="#34495E"/>
+                                <Label Text="  |  " TextColor="#34495E"/>
+                                <Label Text="{Binding pubDate}" TextColor="#34495E"/>
+                            </HorizontalStackLayout>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </RefreshView>
+</ContentPage>

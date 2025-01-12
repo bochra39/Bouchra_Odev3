@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Bouchra_Odev3.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Bouchra_Odev3"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Uygulama Menü"
+    BackgroundColor="Azure"
+    TitleColor="#2C3E50">
+
+    <Shell.FlyoutHeader>
+        <Grid BackgroundColor="Beige" Padding="10, 20">
+            <Label Text="Menü"
+                   TextColor="#2C3E50"
+                   FontSize="Large"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start"/>
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <ShellContent
+        Title="Ana Sayfa"
+        ContentTemplate="{DataTemplate local:Home}"
+        Route="Home"
+        Icon="home2.png"/>
+
+    <ShellContent
+        Title="Döviz Kurları"
+        ContentTemplate="{DataTemplate local:Doviz}"
+        Route="Doviz" 
+        Icon="exchange.png"/>
+
+    <ShellContent
+        Title="Haberler"
+        ContentTemplate="{DataTemplate local:NewPage}"
+        Route="NewPage"
+        Icon="newspaper1.png"/>
+
+    <ShellContent
+        Title="Hava Durumu"
+        ContentTemplate="{DataTemplate local:HavaDurumu}"
+        Route="HavaDurumu"
+        Icon="weather.png"/>
+
+    <ShellContent
+        Title="Yapılacaklar Listesi"
+        ContentTemplate="{DataTemplate local:ToDoList}"
+        Route="ToDoList"
+        Icon="todolist1.png"/>
+
+    <ShellContent
+        Title="Ayarlar"
+        ContentTemplate="{DataTemplate local:Ayarlar}"
+        Route="Ayarlar"
+        Icon="settings.png"/>
+
+</Shell>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bouchra_Odev3.Home"
+             Title="Ana Sayfa"
+             BackgroundColor="Azure">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="20"
+            Padding="20,0"
+            VerticalOptions="Center">
+
+            <Frame CornerRadius="16" HasShadow="True" Padding="0" HorizontalOptions="Center" BackgroundColor="Beige">
+                <Image Source="bochra.jpg" HorizontalOptions="Center" Aspect="AspectFill" />
+            </Frame>
+
+            <Frame CornerRadius="12" Padding="10" Margin="0,10,0,0" HasShadow="True" BorderColor="#5DADE2" BackgroundColor="#F0F8FF">
+                <Label Text="Hoş Geldiniz"
+                       SemanticProperties.HeadingLevel="Level1"
+                       FontSize="30"
+                       TextColor="#2C3E50"
+                       HorizontalOptions="Center" />
+            </Frame>
+
+            <Frame CornerRadius="12" Padding="8" Margin="0,10,0,0" HasShadow="True" BorderColor="#5DADE2" BackgroundColor="#F0F8FF">
+                <Label Text="Ödev3 Projesi"
+                       FontSize="22"
+                       TextColor="#34495E"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+            </Frame>
+
+            <Frame CornerRadius="12" Padding="8" Margin="0,10,0,0" HasShadow="True" BorderColor="#5DADE2" BackgroundColor="#F0F8FF">
+                <Label Text="Bartın Üniversitesi / Bilgisayar Mühendisliği"
+                       FontSize="20"
+                       TextColor="#34495E"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

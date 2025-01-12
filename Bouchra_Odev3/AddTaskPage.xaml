@@ -1,0 +1,31 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bouchra_Odev3.AddTaskPage"
+             Title="Yeni Görev Ekle"
+             BackgroundColor="Azure">
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,*"
+          ColumnDefinitions="*,*,*,*"
+          RowSpacing="5"
+          ColumnSpacing="10"
+          Padding="15"
+          Margin="15">
+
+        <Label Text="Görev:" Grid.Row="1" TextColor="#2C3E50" />
+        <Entry x:Name="taskEntry" Placeholder="Görev Adı" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Keyboard="Default" BackgroundColor="#F0F8FF" TextColor="#34495E"/>
+
+        <Label Text="Detay:" Grid.Row="3" Padding="0,10,0,0" TextColor="#2C3E50" />
+        <Editor x:Name="taskEditor" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" Keyboard="Default" Placeholder="Detayları Yaz" VerticalOptions="Start" HeightRequest="150" BackgroundColor="#F0F8FF" TextColor="#34495E" />
+
+        <Label Text="Tarih:" Grid.Row="5" Padding="0,10,0,0" TextColor="#2C3E50" />
+        <DatePicker x:Name="taskDatePicker" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="4" TextColor="#34495E" />
+
+        <Label Text="Saat:" Grid.Row="7" Padding="0,10,0,0" TextColor="#2C3E50" />
+        <TimePicker x:Name="taskTimePicker" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="4" TextColor="#34495E" />
+
+        <Button Text="Tamam" FontSize="Small" Grid.Row="11" Grid.Column="1" Margin="0,35,25,0" 
+                WidthRequest="100" HeightRequest="55" BackgroundColor="#5DADE2" TextColor="White" Clicked="tamamClicked"/>
+        <Button Text="İptal" FontSize="Small" Grid.Row="11" Grid.Column="2" Margin="25,35,0,0" 
+                WidthRequest="100" HeightRequest="55" BackgroundColor="#5DADE2" TextColor="White" Clicked="iptalClicked"/>
+
+    </Grid>
+</ContentPage>
