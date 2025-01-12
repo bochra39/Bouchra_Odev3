@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Bouchra_Odev3.ToDoList"
              Title="Yapılacaklar Listesi"
-             BackgroundColor="Azure">
+            >
 
     <ContentPage.ToolbarItems>
         <ToolbarItem IconImageSource="add1.png" Order="Primary" Priority="0" Clicked="addClicked" />

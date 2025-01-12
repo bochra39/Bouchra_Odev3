@@ -23,36 +23,36 @@
         Title="Ana Sayfa"
         ContentTemplate="{DataTemplate local:Home}"
         Route="Home"
-        Icon="home2.png"/>
+        Icon="hut.png"/> 
 
     <ShellContent
         Title="Döviz Kurları"
         ContentTemplate="{DataTemplate local:Doviz}"
         Route="Doviz" 
-        Icon="exchange.png"/>
+        Icon="exchance.png"/>
 
     <ShellContent
         Title="Haberler"
         ContentTemplate="{DataTemplate local:NewPage}"
         Route="NewPage"
-        Icon="newspaper1.png"/>
+        Icon="news.png"/>
 
     <ShellContent
         Title="Hava Durumu"
         ContentTemplate="{DataTemplate local:HavaDurumu}"
         Route="HavaDurumu"
-        Icon="weather.png"/>
+        Icon="cloudy.png"/>
 
     <ShellContent
         Title="Yapılacaklar Listesi"
         ContentTemplate="{DataTemplate local:ToDoList}"
         Route="ToDoList"
-        Icon="todolist1.png"/>
+        Icon="to-do-list.png"/>
 
     <ShellContent
         Title="Ayarlar"
         ContentTemplate="{DataTemplate local:Ayarlar}"
         Route="Ayarlar"
-        Icon="settings.png"/>
+        Icon="setting.png"/>
 
 </Shell>

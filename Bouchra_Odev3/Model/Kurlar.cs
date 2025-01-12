@@ -20,11 +20,11 @@ namespace AltinDoviz.Model
             get
             {
                 if (Yon.Contains("up"))
-                    return "up.png";
+                    return "increase.png";
                 else if (Yon.Contains("down"))
-                    return "down.png";
+                    return "decrease.png";
                 else if (Yon.Contains("minus"))
-                    return "next.png";
+                    return "equal.png";
                 return "";
             }
         }

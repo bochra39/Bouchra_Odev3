@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Bouchra_Odev3.Ayarlar"
              Title="Ayarlar"
-             BackgroundColor="Azure">
+             >
     <ScrollView>
         <StackLayout Padding="25" Spacing="25">
 

@@ -15,7 +15,7 @@
                         <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,*"
                               ColumnDefinitions="*,*,*">
                             <Label Grid.Row="0" Grid.Column="0" Text="{Binding Name}" FontSize="20"/>
-                            <ImageButton Grid.Row="0" Grid.Column="2" Source="delete.png" HeightRequest="30" VerticalOptions="End" HorizontalOptions="End" Margin="80,0,0,0"
+                            <ImageButton Grid.Row="0" Grid.Column="2" Source="delete (1).png" HeightRequest="30" VerticalOptions="End" HorizontalOptions="End" Margin="80,0,0,0"
                                          Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference CitiesCollectionView}}"
                                          CommandParameter="{Binding .}"/>
                             <Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Source="{Binding Source}" HeightRequest="150" />
